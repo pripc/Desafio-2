@@ -10,77 +10,102 @@
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    footer { font-size: 11px; text-align: center; }
+    footer a { color: hsl(228, 45%, 44%); }
     body{
       background-color: rgb(4, 3, 19);
       color:white;
       height:auto;
+      margin:5rem 10rem 5rem 10rem ;
+      text-align: center;
+      padding-bottom:0px;
+      border-bottom-left-radius: 8px;
+      border-top-left-radius: 8px;
       
     }
-    .container{
+    main{
       display:inline-grid;
-      grid-template-columns:auto auto;
-      justify-content: center;
+      grid-template-columns:50% 50%;
       column-gap: 0px;
       
     }
-    .container #leftSide{
+    #leftSide{
       margin-right:0px;
     }
-    #rightSide img{
-      width:70%;
-      padding-top:90px;
-      border-bottom-right-radius: 10px;
-      border-top-right-radius: 20px;
+    #rightSide{
+      background-color:rgb(107, 43, 167);
+      height:99%;
+      border-bottom-right-radius: 8px;
+      border-top-right-radius: 8px;
       
+
+  
+    }
+    #rightSide img{
+      width:100%;
+      
+      opacity: 60%;
+      border-bottom-right-radius: 8px;
+      border-top-right-radius: 8px;
+      
+         
     }
     #leftSide{
-      display:flex;
-      flex-direction: column;
       background-color: rgb(14, 10, 39);
-      border-bottom-left-radius: 10px;
-      border-top-left-radius: 10px;
-      width:70%;
-      margin-top:90px;
-      margin-left:30px;
+      border-bottom-left-radius: 8px;
+      border-top-left-radius: 8px;
+      width:auto;
+      text-align: left;
+      height:99%;
     }
     #leftSide h1{
       font-family: Arial, Helvetica, sans-serif;
-      font-size:30px;
-      padding-left:50px;
+      
+      font-size:20px;
+      padding-left:10%;
+      padding-right:10%;
+      padding-top:15%;
     }
     #leftSide h2{
       font-family: Arial, Helvetica, sans-serif;
       font-size:15px;
       font-weight:100;
       color:rgb(109, 100, 100,  0.9);
-      padding-left:50px;
+      padding-left:10%;
+      padding-right:10%;
     }
     #datas{
       display:flex;
       flex-direction: row;
+      justify-content: space-between;
+      margin: 8% 30% auto 10%;
     }
-    .number{
-      font-size:30px;
+    #datas .number{
+      font-size:18px;
       margin-bottom:2px;
     }
-    .name{
+    #datas .name{
       margin-top:0px;
+      font-weight: 400;
+      text-transform: uppercase;
       
     }
-    .name h2{
+    #leftSide .name{
       font-weight:300;
+      font-size: 50%;
+    }
+    #mudaCor{
+      color:rgb(123, 73, 170)
     }
   </style>
 </head>
 <body>
-  <div class="container">
+  <main>
     <div id="leftSide">
-        <h1>Get insights that help your business grow.</h1>
+        <h1>Get <spam id="mudaCor">insights</spam> that help your business grow.</h1> 
         <h2>Discover the benefits of data analytics and make<br> better decisions regarding revenue, customer<br> 
           experience, and overall efficiency.</h2>
-        <div id="datas">
+        <section id="datas">
           <div>  
             <h1 class="number">10k+</h1>
             <h2 class="name">companies</h2>
@@ -90,26 +115,18 @@
             <h2 class="name">templates</h2>
           </div>
           <div>  
-            <h1 class="number">12m+</h1>
+            <h1 class="number">12M+</h1>
             <h2 class="name">queries</h2>
           </div>
-        </div>
-    </div>
+        </section>
+      </div>
     <div id="rightSide">
-      <img src="images/image-header-desktop.jpg">
+        <img alt="" src="images/image-header-desktop.jpg"> 
     </div>
-  </div>
-  
-
-  
-
-   
-   
-   
-
-  <div class="attribution">
+  </main>
+  <footer>
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Priscila Pereira Cunha</a>.
-  </div>
+  </footer>
 </body>
 </html>
